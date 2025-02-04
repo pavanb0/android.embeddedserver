@@ -15,6 +15,9 @@
 
 A minimal way to create HTTP server in android with Kotlin. Create asynchronous client and server applications. Anything from microservices to multiplatform HTTP client apps in a simple way. Open Source, free, and fun!
 
+## New Feature: SMS Sending API
+Added a /send-sms endpoint to send text messages from an Android device via an API call using a foreground service. This is useful for quick OTP authentication, but only for testing purposes.
+
 ```kotlin
 embeddedServer(Netty, PORT, watchPaths = emptyList()) {
             install(WebSockets)
